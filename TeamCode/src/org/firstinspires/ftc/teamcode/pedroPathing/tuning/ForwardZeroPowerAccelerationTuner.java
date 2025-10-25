@@ -33,7 +33,7 @@ public class ForwardZeroPowerAccelerationTuner extends OpMode {
     Follower follower;
 
     private final ArrayList<Double> accelerations = new ArrayList<>();
-    public static double VELOCITY = 40;
+    public static double VELOCITY = 25;
 
     private double previousVelocity;
     private long previousTimeNano;

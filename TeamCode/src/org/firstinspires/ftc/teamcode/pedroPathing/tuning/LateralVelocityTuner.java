@@ -74,12 +74,12 @@ public class LateralVelocityTuner extends OpMode {
         follower.update();
 
         if (!end) {
-            if (Math.abs(follower.getPose().getX()) > DISTANCE) {
+            if (Math.abs(follower.getPose().getY()) > DISTANCE) {
                 end = true;
                 follower.setTeleOpDrive(0, 0, 0, true);
             } else {
                 follower.setTeleOpDrive(0,1,0,true);
-                double currentVelocity = Math.abs(follower.poseTracker.getLocalizer().getVelocity().getX());
+                double currentVelocity = Math.abs(follower.poseTracker.getLocalizer().getVelocity().getY());
                 velocities.add(currentVelocity);
                 velocities.remove(0);
             }
