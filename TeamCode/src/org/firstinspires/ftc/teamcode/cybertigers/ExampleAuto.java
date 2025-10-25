@@ -180,11 +180,9 @@ public class ExampleAuto extends OpMode {
         opmodeTimer = new Timer();
         opmodeTimer.resetTimer();
 
-
         follower = Constants.createFollower(hardwareMap);
         buildPaths();
         follower.setStartingPose(startPose);
-
     }
 
     /** This method is called continuously after Init while waiting for "play". **/
